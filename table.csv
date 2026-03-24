@@ -1,0 +1,64 @@
+Level,Color,Focus Area,Concept,Type,Purpose,Main Input,Main Output
+1,🟢,Foundations (Math + Stats Basics),Mean / Variance / Std Dev,Metric,Describe data,Data,Summary stats
+1,🟢,Foundations,"Probability Distributions (Normal, Lognormal)",Model,Model randomness,Data,Distribution shape
+1,🟢,Foundations,Covariance,Metric,Joint movement,"X, Y",Covariance
+1,🟢,Foundations,Correlation,Metric,Strength of relation,"X, Y",Correlation coefficient
+1,🟢,Foundations,Law of Large Numbers,Theorem,Convergence of averages,Samples,Stable mean
+1,🟢,Foundations,Central Limit Theorem,Theorem,Normal approximation,Samples,Distribution of mean
+1,🟢,Foundations Added,"Linear Algebra basics (matrices, eigenvalues)",Math,"Core for PCA, optimization, etc.",Matrices,"Decompositions, transformations"
+2,🟡,Core Statistical Models,Simple Linear Regression,Model,Relationship,X → Y,"α, β"
+2,🟡,Core Statistical Models,Multiple Linear Regression,Model,Multi-factor relation,"X₁, X₂ → Y",Coefficients
+2,🟡,Core Statistical Models,Polynomial Regression,Model,Non-linear relation,X → Y,Curve fit
+2,🟡,Core Statistical Models,Logistic Regression,Model,Classification,X → Probability,Class probability
+2,🟡,Core Statistical Models,Maximum Likelihood Estimation (MLE),Method,Estimate parameters,Data,Best parameters
+2,🟡,Core Statistical Models,Gauss-Markov Theorem,Theorem,Validate OLS,Assumptions,BLUE estimator
+3,🔵,Time Series Modeling,Stationarity,Property,Stability check,Time series,Validity
+3,🔵,Time Series Modeling,Autocorrelation (ACF),Metric,Lag relationship,Time series,Correlation by lag
+3,🔵,Time Series Modeling,Partial Autocorrelation (PACF),Metric,Direct lag effect,Time series,Lag importance
+3,🔵,Time Series Modeling,AR (AutoRegressive),Model,Past → present,Past Y,Current Y
+3,🔵,Time Series Modeling,MA (Moving Average),Model,Past errors → present,Errors,Current Y
+3,🔵,Time Series Modeling,ARIMA,Model,Forecast time series,Past Y,Future Y
+3,🔵,Time Series Modeling,SARIMA,Model,Seasonal forecasting,Past Y,Future Y
+3,🔵,Time Series Modeling,ARIMAX,Model,Add external variables,X + Past Y,Future Y
+3,🔵,Time Series Modeling Added,Cointegration / Error Correction Models,Model,Long-run equilibrium relationships,Multiple time series,Adjustment dynamics
+4,🟣,Volatility & Risk Models,Volatility (Std Dev of returns),Metric,Measure risk,Returns,Volatility
+4,🟣,Volatility & Risk Models,ARCH,Model,Model changing volatility,Past errors,Variance
+4,🟣,Volatility & Risk Models,GARCH,Model,Persistent volatility,Past variance + errors,Volatility forecast
+4,🟣,Volatility & Risk Models,EWMA,Method,Weighted volatility,Returns,Smoothed volatility
+4,🟣,Volatility & Risk Models Added,Stochastic Volatility (Heston model),Model,Volatility is random process,"S, parameters","Option prices, vol surface"
+4,🟣,Volatility & Risk Models Added,"Realized Volatility / GARCH variants (EGARCH, TGARCH)",Model,Asymmetric / leverage effects,Returns,Improved vol forecast
+5,🟠,Simulation & Stochastic Processes,Random Walk,Model,Price evolution,Random shocks,Price path
+5,🟠,Simulation & Stochastic Processes,Brownian Motion,Model,Continuous randomness,Time + noise,Path
+5,🟠,Simulation & Stochastic Processes,Geometric Brownian Motion (GBM),Model,Stock price model,"μ, σ",Price simulation
+5,🟠,Simulation & Stochastic Processes,Monte Carlo Simulation,Method,Simulate uncertainty,Distribution,Many scenarios
+5,🟠,Simulation & Stochastic Processes Added,Itô's Lemma / Stochastic Differential Equations,Theorem/Method,Continuous-time dynamics,Processes,SDE solutions
+5,🟠,Simulation & Stochastic Processes Added,Jump-Diffusion Processes (Merton),Model,Prices with jumps,"μ, σ, jump params",Paths with discontinuities
+6,🔴,Portfolio Theory,Expected Return,Metric,Average return,Returns,Mean
+6,🔴,Portfolio Theory,Portfolio Variance,Metric,Risk of portfolio,Weights + Covariance,Risk
+6,🔴,Portfolio Theory,Efficient Frontier,Model,Optimal portfolios,Assets,Risk-return curve
+6,🔴,Portfolio Theory,Mean-Variance Optimization,Method,Optimize allocation,"Returns, covariance",Optimal weights
+6,🔴,Portfolio Theory,CAPM,Model,Risk-return relation,Market return,Expected return
+6,🔴,Portfolio Theory,Beta,Metric,Market sensitivity,Returns,β
+6,🔴,Portfolio Theory,Alpha,Metric,Excess return,Model vs actual,α
+6,🔴,Portfolio Theory Added,Black-Litterman Model,Model,Incorporate views,Priors + views,Adjusted expected returns
+7,🟤,Derivatives & Pricing,Payoff Function,Model,Option payoff,Price,Payoff
+7,🟤,Derivatives & Pricing,No-Arbitrage Principle,Theorem,Fair pricing,Market prices,Bounds
+7,🟤,Derivatives & Pricing,Binomial Model,Model,Discrete pricing,Up/down moves,Option price
+7,🟤,Derivatives & Pricing,Black-Scholes Model,Model,Option pricing,"S, K, r, σ, t",Option price
+7,🟤,Derivatives & Pricing,"Greeks (Delta, Gamma, etc.)",Metric,Sensitivity,Inputs,Risk measures
+7,🟤,Derivatives & Pricing Added,Risk-Neutral Valuation,Principle,Pricing under Q-measure,Risk-free rate,Fair value
+7,🟤,Derivatives & Pricing Added,Local Volatility / Dupire equation,Model,Smile-consistent pricing,Implied vol surface,Local vol function
+8,⚫,Risk Management,Value at Risk (VaR),Metric,Loss estimation,Returns,Max loss
+8,⚫,Risk Management,Conditional VaR (CVaR / Expected Shortfall),Metric,Tail risk,Returns,Expected loss
+8,⚫,Risk Management,Stress Testing,Method,Extreme scenarios,Assumptions,Loss outcomes
+8,⚫,Risk Management,Scenario Analysis,Method,What-if analysis,Inputs,Outcomes
+8,⚫,Risk Management Added,Backtesting (VaR models),Method,Model validation,Historical data,Kupiec / traffic light test
+8,⚫,Risk Management Added,Expected Shortfall (coherent risk measure),Metric,Beyond VaR,Loss distribution,Tail expectation
+9,⚪,Advanced / Quant Research,Factor Models (Fama-French),Model,Explain returns,Factors,Expected return
+9,⚪,Advanced / Quant Research,Principal Component Analysis (PCA),Method,Dimensionality reduction,Data,Components
+9,⚪,Advanced / Quant Research,Kalman Filter,Model,Dynamic estimation,Time series,Updated estimates
+9,⚪,Advanced / Quant Research,"Machine Learning Models (RF, XGBoost)",Model,Prediction,Features,Predictions
+9,⚪,Advanced / Quant Research,Reinforcement Learning,Method,Strategy optimization,Environment,Policy
+9,⚪,Advanced / Quant Research Added,Neural Networks / Deep Learning in Finance,Model,Complex pattern recognition,Features / time series,Predictions / alphas
+9,⚪,Advanced / Quant Research Added,Market Microstructure Models,Model,Order book / liquidity,Order flow,"Spread, impact"
+9,⚪,Advanced / Quant Research Added,"High-Frequency Trading Concepts (latency, queue position)",Area,Execution & alpha decay,Market data,Optimal execution strategies
